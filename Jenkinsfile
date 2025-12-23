@@ -5,7 +5,7 @@ pipeline{
         choice(name: 'Env', choices: ['Dev', 'preprod', 'prod'])
     }
     stages{
-         stage('Deploy'){
+         stage('Deployy'){
             steps{
                 echo 'Deploying to ${params.Env} environment'
             }
